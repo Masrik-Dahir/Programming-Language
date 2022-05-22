@@ -1,0 +1,28 @@
+<!--Project Name: Project-->
+
+
+<project name="Project">
+	<echo message="Building Project" />
+
+
+<!--
+****************************************************
+*    AWT, Libretro, SDL
+****************************************************
+-->
+
+	<echo message="Programming Language" />
+	<mkdir dir="build/classes/ProducerConsumer"/>
+	<javac
+		srcdir="Assignment_4/Java/src/ProducerConsumer"
+		destdir="build/classes/ProducerConsumer"
+		includeantruntime="false"
+		debug="true"
+		debuglevel="lines,vars,source"
+	>
+	<compilerarg value="-Xlint:unchecked"/>
+	<compilerarg value="-Xlint:deprecation"/>
+	</javac>
+
+
+</project>
